@@ -1,3 +1,5 @@
+import InputNumber from "./InputNumber"
+
 function App() {
 
   return (<div
@@ -8,22 +10,22 @@ function App() {
 
     <div className="w-full space-y-3">
       <h2 className='text-lg font-medium'>Valor inicial</h2>
-      <input type="number" name="" id="" prefix="R$" />
+      <InputNumber defaultValue={0}/>
     </div>
 
     <div className="w-full space-y-3">
       <h2 className='text-lg font-medium'>Investimento de %</h2>
-      <input type="number" name="" id="" />
+      <InputNumber defaultValue={0}/>
     </div>
 
     <div className="w-full space-y-3">
       <h2 className='text-lg font-medium'>Lazer de %</h2>
-      <input type="number" name="" id="" />
+      <InputNumber defaultValue={0}/>
     </div>
 
     <div className="w-full space-y-3">
       <h2 className='text-lg font-medium'>Restante</h2>
-      <input type="number" name="" id="" />
+      <InputNumber defaultValue={0}/>
     </div>
   </div>)
 }
