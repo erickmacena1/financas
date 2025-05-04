@@ -5,27 +5,27 @@ function App() {
   return (<div
     className='font-["Inter"] flex items-center flex-col px-4 space-y-6'
   >
-    <h1 className='text-2xl font-bold mb-6'>Divisão de gastos</h1>
+    <h1 className='text-2xl font-bold mb-2'>Divisão de gastos</h1>
     <hr className="w-full border-slate-600" />
 
-    <div className="w-full space-y-3">
+    <div className="w-full space-y-3 flex items-center flex-col">
       <h2 className='text-lg font-medium'>Valor inicial</h2>
       <InputNumber defaultValue={0}/>
     </div>
 
-    <div className="w-full space-y-3">
-      <h2 className='text-lg font-medium'>Investimento de %</h2>
+    <div className="w-full space-y-3 flex items-center flex-col">
+      <h2 className='text-lg font-medium'>Investimento</h2>
       <InputNumber defaultValue={0}/>
     </div>
 
-    <div className="w-full space-y-3">
-      <h2 className='text-lg font-medium'>Lazer de %</h2>
+    <div className="w-full space-y-3 flex items-center flex-col">
+      <h2 className='text-lg font-medium'>Lazer</h2>
       <InputNumber defaultValue={0}/>
     </div>
 
-    <div className="w-full space-y-3">
+    <div className="w-full space-y-3 flex items-center flex-col">
       <h2 className='text-lg font-medium'>Restante</h2>
-      <InputNumber defaultValue={0}/>
+      <InputNumber defaultValue={0} />
     </div>
   </div>)
 }
